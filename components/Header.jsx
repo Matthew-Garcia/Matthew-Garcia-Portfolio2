@@ -24,14 +24,14 @@ const Header = () => {
     whileInView={{y: 0, opacity: 1}}
     transition={{duration: 0.8, delay: 0.5}}
     className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        frontend web developer based in London.</motion.h1>
+        computer engineer based in Houston, TX.</motion.h1>
 
         <motion.p
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
+        I’m a computer engineer with experience in embedded systems, robotics, IT support, and artificial neural networks.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
