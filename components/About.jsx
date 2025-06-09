@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
-                >I am a computer engineer with hands-on experience in embedded systems, robotics, IT infrastructure, and artificial neural networks. I enjoy solving real-world problems through hardware-software integration and have contributed to both academic and industry projects.</p>
+                >I am a computer engineer with hands-on experience in embedded systems, robotics, IT infrastructure, and artificial neural networks. My background includes developing FPGA-based digital systems, working with ROS2-driven robotic platforms, and supporting enterprise-scale IT operations. I'm passionate about bridging hardware and software to create real-world engineering solutions that are both efficient and innovative.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}
