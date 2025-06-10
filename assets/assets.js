@@ -109,7 +109,7 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C/C++, Python, JavaScript, Verilog, VHDL, ARM Assembly, Bash, HTML/CSS, ROS2, SQL' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Engineering (expected Jan 2026), A.S. in Pre-Engineering, A.S. in General Studies' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed 10+ projects in robotics, embedded systems, and IT solutions'  }
 ];
 
 export const toolsData = [
