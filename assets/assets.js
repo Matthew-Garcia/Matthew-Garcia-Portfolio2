@@ -108,7 +108,19 @@ export const serviceData = [
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Engineering (expected January 2026)<br />A.S. in Pre-Engineering<br />A.S. in General Studies' }, 
+    {
+  icon: assets.edu_icon,
+  iconDark: assets.edu_icon_dark,
+  title: 'Education',
+  description: (
+    <>
+      B.S. in Computer Engineering (expected January 2026)<br />
+      A.S. in Pre-Engineering<br />
+      A.S. in General Studies
+    </>
+  )
+}
+ 
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
