@@ -10,7 +10,7 @@ const Footer = ({isDarkMode}) => {
 
         <div className='w-max flex items-center gap-2 mx-auto'>
             <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>
-            greatstackdev@gmail.com
+            garciamatthew176@gmail.com
         </div>
       </div>
 
