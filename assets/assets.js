@@ -79,22 +79,22 @@ export const assets = {
 export const workData = [
     {
         title: 'SCARA Robot Arm',
-        description: 'Embedded Systems &vRobotics',
+        description: 'Embedded Systems & Robotics',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Smart IoT Pet Feeder',
+        description: 'IoT & Mobile App Integration',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: '64-Bit ALU Design (VHDL)',
+        description: 'Digital Design & FPGA',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'LiDAR-Based Mobile Robot',
+        description: 'Autonomous Navigation with ROS2',
         bgImage: '/work-4.png',
     },
 ]
@@ -108,7 +108,7 @@ export const serviceData = [
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C/C++, Python, JavaScript, Verilog, VHDL, ARM Assembly, Bash, HTML/CSS, ROS2, SQL' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Engineering (expected Jan 2026), A.S. in Pre-Engineering, A.S. in General Studies' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.S. in Computer Engineering (expected Jan. 2026), A.S. in Pre-Engineering, A.S. in General Studies' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Developed 10+ projects in robotics, embedded systems, and IT solutions'  }
 ];
 
