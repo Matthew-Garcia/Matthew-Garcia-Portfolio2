@@ -1,9 +1,8 @@
-'use client'
+'use client';
 
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import { assets } from '@/assets/assets';
 
 export default function ScaraRobotPage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,21 +32,26 @@ export default function ScaraRobotPage() {
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-4xl font-bold mb-4">SCARA Robot Arm</h1>
-        <p className="text-lg text-gray-700 mb-6">
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
-        <img
-          src="/work-1.png"
-          alt="SCARA Robot Arm"
-          className="rounded-lg shadow-lg mb-6"
-        />
-        <ul className="list-disc list-inside text-base text-gray-600 mb-4">
+
+        <div className="w-full max-w-2xl mx-auto">
+          <img
+            src="/work-1.png"
+            alt="SCARA Robot Arm"
+            className="w-full h-auto rounded-lg shadow-lg object-cover mt-6 mb-6"
+          />
+        </div>
+
+        <ul className="list-disc list-inside text-base text-gray-600 dark:text-gray-400 mb-6">
           <li>Custom URDF and Xacro models</li>
           <li>Inverse kinematics & PID tuning</li>
           <li>Simulated in Gazebo, visualized in RViz2</li>
         </ul>
+
         <a
           href="https://github.com/Matthew-Garcia/SCARA-Robot"
           target="_blank"
@@ -56,7 +60,7 @@ export default function ScaraRobotPage() {
         >
           View on GitHub →
         </a>
-      </div>
+      </main>
 
       <Footer isDarkMode={isDarkMode} />
     </>
