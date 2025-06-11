@@ -38,15 +38,24 @@ export default function ScaraRobotPage() {
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
 
-        <div className="w-full max-w-2xl mx-auto">
-          <img
-            src="/SCARA-Robot-Arm.gif"
-            src="/SCARA-Robot-Arm.png"
-            src="/SCARA-Robot-SolidWorks.jpg"
-            alt="SCARA Robot Arm"
-            className="w-full h-auto rounded-lg shadow-lg object-cover mt-6 mb-6"
-          />
-        </div>
+        <div className="w-full max-w-2xl mx-auto space-y-6">
+  <img
+    src="/SCARA-Robot-Arm.gif"
+    alt="SCARA Robot Animation"
+    className="w-full h-auto rounded-lg shadow-lg object-cover"
+  />
+  <img
+    src="/SCARA-Robot-Arm.png"
+    alt="SCARA Robot Render"
+    className="w-full h-auto rounded-lg shadow-lg object-cover"
+  />
+  <img
+    src="/SCARA-Robot-SolidWorks.jpg"
+    alt="SCARA SolidWorks Design"
+    className="w-full h-auto rounded-lg shadow-lg object-cover"
+  />
+</div>
+
 
         <ul className="list-disc list-inside text-base text-gray-600 dark:text-gray-400 mb-6">
           <li>Custom URDF and Xacro models</li>
