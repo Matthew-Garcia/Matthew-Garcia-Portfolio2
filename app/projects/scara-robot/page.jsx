@@ -40,7 +40,9 @@ export default function ScaraRobotPage() {
 
         <div className="w-full max-w-2xl mx-auto">
           <img
-            src="/work-1.png"
+            src="/SCARA-Robot-Arm.gif"
+            src="/SCARA-Robot-Arm.png"
+            src="/SCARA-Robot-SolidWorks.jpg"
             alt="SCARA Robot Arm"
             className="w-full h-auto rounded-lg shadow-lg object-cover mt-6 mb-6"
           />
