@@ -32,7 +32,7 @@ export default function ScaraRobotPage() {
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-      <main className="max-w-4xl mx-auto px-6 pt-24 pb-12">
+      <main className="max-w-4xl mx-auto px-6 pt-48 pb-12">
         <h1 className="text-4xl font-bold mb-4">SCARA Robot Arm</h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
           A robotic arm built using microcontrollers, ROS2, and PID control.
