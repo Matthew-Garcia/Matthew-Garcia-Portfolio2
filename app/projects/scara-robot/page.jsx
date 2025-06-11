@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
@@ -9,8 +9,9 @@ export default function ScaraRobotPage() {
 
   useEffect(() => {
     if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       setIsDarkMode(true);
     } else {
@@ -20,17 +21,20 @@ export default function ScaraRobotPage() {
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = '';
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "";
     }
   }, [isDarkMode]);
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <Navbar
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+      />
 
       <main className="max-w-4xl mx-auto px-6 pt-48 pb-12">
         <h1 className="text-4xl font-bold mb-4">SCARA Robot Arm</h1>
@@ -38,24 +42,21 @@ export default function ScaraRobotPage() {
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
 
-        <div className="w-full max-w-2xl mx-auto space-y-6">
-  <img
-    src="/SCARA-Robot-Arm.gif"
-    alt="SCARA Robot Animation"
-    className="w-full h-auto rounded-lg shadow-lg object-cover"
-  />
-  <img
-    src="/SCARA-Robot-Arm.png"
-    alt="SCARA Robot Render"
-    className="w-full h-auto rounded-lg shadow-lg object-cover"
-  />
-  <img
-    src="/SCARA-Robot-SolidWorks.jpg"
-    alt="SCARA SolidWorks Design"
-    className="w-full h-auto rounded-lg shadow-lg object-cover"
-  />
-</div>
+        <div className="flex flex-col md:flex-row gap-6 items-center mb-12">
+          <img
+            src="/SCARA-Robot-Arm.png"
+            alt="SCARA Robot Arm"
+            className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+          />
 
+          <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md text-sm text-gray-700 dark:text-gray-300">
+            <h2 className="text-xl font-semibold mb-2">Rendered SCARA Model</h2>
+            <p>
+              SolidWorks-based rendering of the SCARA robot, demonstrating the
+              Z-axis lead screw and motor assembly.
+            </p>
+          </div>
+        </div>
 
         <ul className="list-disc list-inside text-base text-gray-600 dark:text-gray-400 mb-6">
           <li>Custom URDF and Xacro models</li>
