@@ -42,19 +42,59 @@ export default function ScaraRobotPage() {
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 items-center mb-12">
-          <img
-            src="/SCARA-Robot-Arm.png"
-            alt="SCARA Robot Arm"
-            className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-          />
+        <div className="space-y-12">
+          {/* 1. Rendered Model */}
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <img
+              src="/SCARA-Robot-Arm.png"
+              alt="SCARA Robot Render"
+              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+            />
+            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">
+                Rendered SCARA Model
+              </h2>
+              <p className="text-gray-700 dark:text-gray-300">
+                SolidWorks-based rendering of the SCARA robot, demonstrating the
+                Z-axis lead screw and motor assembly.
+              </p>
+            </div>
+          </div>
 
-          <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md text-sm text-gray-700 dark:text-gray-300">
-            <h2 className="text-xl font-semibold mb-2">Rendered SCARA Model</h2>
-            <p>
-              SolidWorks-based rendering of the SCARA robot, demonstrating the
-              Z-axis lead screw and motor assembly.
-            </p>
+          {/* 2. Animation */}
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <img
+              src="/SCARA-Robot-Arm.gif"
+              alt="SCARA Robot Animation"
+              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+            />
+            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">
+                SCARA Robot Animation
+              </h2>
+              <p className="text-gray-700 dark:text-gray-300">
+                A dynamic simulation showing inverse kinematics and motion
+                profiles using PID control.
+              </p>
+            </div>
+          </div>
+
+          {/* 3. SolidWorks Snapshot */}
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <img
+              src="/SCARA-Robot-SolidWorks.jpg"
+              alt="SolidWorks Design"
+              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+            />
+            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">
+                SolidWorks CAD View
+              </h2>
+              <p className="text-gray-700 dark:text-gray-300">
+                A CAD model designed in SolidWorks showing internal components
+                and mechanical layout.
+              </p>
+            </div>
           </div>
         </div>
 
