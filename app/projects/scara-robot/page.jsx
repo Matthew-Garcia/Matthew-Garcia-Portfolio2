@@ -31,79 +31,53 @@ export default function ScaraRobotPage() {
 
   return (
     <>
-      <Navbar
-        isDarkMode={isDarkMode}
-        setIsDarkMode={setIsDarkMode}
-      />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       <main className="max-w-4xl mx-auto px-6 pt-48 pb-12">
         <h1 className="text-4xl font-bold mb-4">SCARA Robot Arm</h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
-
-        <div className="space-y-12">
-          {/* 1. Rendered Model */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
+        import {motion} from "framer-motion";
+        <div className="flex flex-col lg:flex-row items-center gap-8 my-12">
+          {/* IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-1/2"
+          >
             <img
-              src="/SCARA-Robot-Arm.png"
-              alt="SCARA Robot Render"
-              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
+              src="/SCARA-Robot-Arm.jpg"
+              alt="SCARA Robot Arm"
+              className="w-full h-auto rounded-lg shadow-md object-cover"
             />
-            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">
-                Rendered SCARA Model
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                This image showcases a custom-built SCARA (Selective Compliance Articulated Robot Arm) controlled by an Arduino microcontroller. The robotic arm is precisely engineered with 3D-printed components and driven by stepper motors, enabling high-speed, repeatable motion for pick-and-place applications. The adjacent laptop displays a custom GUI built in Processing, which allows real-time control of the arm using both forward and inverse kinematics. The interface includes joint angle inputs, Cartesian coordinates, and control toggles for gripper actuation. This project demonstrates seamless hardware-software integration using open-source tools.
-                
-              </p>
-            </div>
-          </div>
+          </motion.div>
 
-          {/* 2. Animation */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <img
-              src="/SCARA-Robot-Arm.gif"
-              alt="SCARA Robot Animation"
-              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-            />
-            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">
-                SCARA Robot Animation
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                A dynamic simulation showing inverse kinematics and motion
-                profiles using PID control.
-              </p>
-            </div>
-          </div>
-
-          {/* 3. SolidWorks Snapshot */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <img
-              src="/SCARA-Robot-SolidWorks.jpg"
-              alt="SolidWorks Design"
-              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-            />
-            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">
-                SolidWorks CAD View
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                A CAD model designed in SolidWorks showing internal components
-                and mechanical layout.
-              </p>
-            </div>
-          </div>
+          {/* TEXT CARD */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="w-full lg:w-1/2 bg-white dark:bg-darkTheme p-6 rounded-xl shadow-md"
+          >
+            <h3 className="text-xl font-bold mb-4">
+              SCARA Robot Control Overview
+            </h3>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2 text-sm">
+              <li>Arduino-controlled SCARA robot with 3D-printed body</li>
+              <li>Stepper motors for precise joint articulation</li>
+              <li>Custom GUI in Processing for real-time control</li>
+              <li>Supports both forward and inverse kinematics</li>
+              <li>Used in pick-and-place tasks with gripper actuation</li>
+            </ul>
+          </motion.div>
         </div>
-
         <ul className="list-disc list-inside text-base text-gray-600 dark:text-gray-400 mb-6">
           <li>Custom URDF and Xacro models</li>
           <li>Inverse kinematics & PID tuning</li>
           <li>Simulated in Gazebo, visualized in RViz2</li>
         </ul>
-
         <a
           href="https://github.com/Matthew-Garcia/SCARA-Robot"
           target="_blank"
