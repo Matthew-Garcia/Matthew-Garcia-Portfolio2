@@ -81,12 +81,24 @@ export default function ScaraRobotPage() {
 
 
               </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                The completed SCARA robotic arm is shown interfaced with a custom-built control interface developed in Processing. 
-                The system leverages an Arduino microcontroller to execute precise movements using forward and inverse kinematics. 
-                Users can input joint parameters or Cartesian coordinates, with real-time feedback and control over gripper actuation. 
-                This configuration demonstrates a cohesive integration of embedded systems, mechanical design, and user-centered software engineering.
-              </p>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+  <li>
+    Interfaced with a custom-built control interface developed in Processing.
+  </li>
+  <li>
+    Utilizes an Arduino microcontroller for precise motion with forward and inverse kinematics.
+  </li>
+  <li>
+    Accepts joint parameters or Cartesian coordinates as input.
+  </li>
+  <li>
+    Provides real-time feedback and control over gripper actuation.
+  </li>
+  <li>
+    Integrates embedded systems, mechanical design, and user-centered software engineering.
+  </li>
+</ul>
+
             </motion.div>
           </div>
 
