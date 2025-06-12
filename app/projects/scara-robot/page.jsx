@@ -82,8 +82,10 @@ export default function ScaraRobotPage() {
 
               </h2>
               <p className="text-gray-700 dark:text-gray-300">
-                SolidWorks-based rendering of the SCARA robot, demonstrating the
-                Z-axis lead screw and motor assembly.
+                The completed SCARA robotic arm is shown interfaced with a custom-built control interface developed in Processing. 
+                The system leverages an Arduino microcontroller to execute precise movements using forward and inverse kinematics. 
+                Users can input joint parameters or Cartesian coordinates, with real-time feedback and control over gripper actuation. 
+                This configuration demonstrates a cohesive integration of embedded systems, mechanical design, and user-centered software engineering.
               </p>
             </motion.div>
           </div>
