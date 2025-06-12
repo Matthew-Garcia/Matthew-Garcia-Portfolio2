@@ -125,10 +125,24 @@ export default function ScaraRobotPage() {
               <h2 className="text-xl font-semibold mb-2">
                 SCARA Robot Animation
               </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                A dynamic simulation showing inverse kinematics and motion
-                profiles using PID control.
-              </p>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+  <li>
+    Demonstrates precise pick-and-place capabilities using inverse kinematics and PID control.
+  </li>
+  <li>
+    Executes high-speed, repeatable motion driven by stepper motors and microcontroller coordination.
+  </li>
+  <li>
+    Integrates end-effector control to perform object grasping and placement with accuracy.
+  </li>
+  <li>
+    Operates on a pre-programmed motion sequence simulating a production line task.
+  </li>
+  <li>
+    Highlights the real-world application of control theory, embedded systems, and motion planning.
+  </li>
+</ul>
+
             </motion.div>
           </div>
 
