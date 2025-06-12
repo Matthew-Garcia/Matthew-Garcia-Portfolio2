@@ -55,8 +55,8 @@ export default function ScaraRobotPage() {
                 Rendered SCARA Model
               </h2>
               <p className="text-gray-700 dark:text-gray-300">
-                SolidWorks-based rendering of the SCARA robot, demonstrating the
-                Z-axis lead screw and motor assembly.
+                This image showcases a custom-built SCARA (Selective Compliance Articulated Robot Arm) controlled by an Arduino microcontroller. The robotic arm is precisely engineered with 3D-printed components and driven by stepper motors, enabling high-speed, repeatable motion for pick-and-place applications. The adjacent laptop displays a custom GUI built in Processing, which allows real-time control of the arm using both forward and inverse kinematics. The interface includes joint angle inputs, Cartesian coordinates, and control toggles for gripper actuation. This project demonstrates seamless hardware-software integration using open-source tools.
+                
               </p>
             </div>
           </div>
