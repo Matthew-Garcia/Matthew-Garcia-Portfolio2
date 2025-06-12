@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { motion } from "framer-motion";
 
 export default function ScaraRobotPage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -39,24 +40,28 @@ export default function ScaraRobotPage() {
           A robotic arm built using microcontrollers, ROS2, and PID control.
         </p>
 
-        <div className="space-y-12">
-          {/* 1. Rendered Model */}
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <img
-              src="/SCARA-Robot-Arm.png"
-              alt="SCARA Robot Render"
-              className="w-full md:w-1/2 rounded-lg shadow-md object-cover"
-            />
-            <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold mb-2">
-                Rendered SCARA Model
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                SolidWorks-based rendering of the SCARA robot, demonstrating the
-                Z-axis lead screw and motor assembly.
-              </p>
-            </div>
-          </div>
+       <motion.div
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  className="w-full md:w-1/2"
+>
+  <img
+    src="/SCARA-Robot-Arm.png"
+    alt="SCARA Robot Render"
+    className="w-full rounded-lg shadow-md object-cover"
+/>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
+>
+  {/* Text content here */}
+</motion.div>
+
 
           {/* 2. Animation */}
           <div className="flex flex-col md:flex-row gap-6 items-center">
