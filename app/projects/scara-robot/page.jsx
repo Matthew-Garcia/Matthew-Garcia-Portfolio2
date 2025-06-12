@@ -50,7 +50,9 @@ export default function ScaraRobotPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-gray-700 dark:text-gray-300 mb-6"
         >
-          A robotic arm built using microcontrollers, ROS2, and PID control.
+        This project features a custom-built SCARA (Selective Compliance Articulated Robot Arm) designed for precision pick-and-place tasks. The system combines mechanical engineering, embedded programming, and control theory into a single cohesive robotic platform.
+
+
         </motion.p>
 
         <div className="space-y-12">
