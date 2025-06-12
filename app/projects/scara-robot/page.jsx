@@ -191,6 +191,78 @@ export default function ScaraRobotPage() {
             </motion.div>
           </div>
         </div>
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
+  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+    <li><strong>Electronics:</strong> Arduino UNO, CNC Shield, A4988 stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit switches, DC power supply (12V/6A)</li>
+    <li><strong>3D Design Software:</strong> 3DEXPERIENCE SOLIDWORKS, xDesign, 3DMarkup</li>
+    <li><strong>Programming:</strong> Arduino IDE (C++), Processing IDE (Java-based), ControlP5 library</li>
+    <li><strong>Hardware:</strong> Creality CR-10 / Ender3 3D Printer, PLA/PLA+ filament, linear rods, bearings, lead screws, GT2 pulleys</li>
+    <li><strong>Libraries:</strong> AccelStepper, ControlP5</li>
+  </ul>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 className="text-xl font-semibold mb-2">Purpose</h2>
+  <p className="text-gray-700 dark:text-gray-300">
+    Design and build a fully functional SCARA robotic arm for educational and experimental purposes,
+    demonstrating core robotics concepts such as kinematics, motion control, and automation.
+  </p>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 className="text-xl font-semibold mb-2">Theory</h2>
+  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+    <li><strong>Forward Kinematics:</strong> Calculates end-effector position from joint angles.</li>
+    <li><strong>Inverse Kinematics:</strong> Computes joint angles for a specified position.</li>
+    <li><strong>Motion Control:</strong> Smooth trajectory execution via AccelStepper.</li>
+    <li><strong>GUI Integration:</strong> Live joint and Cartesian input with visual feedback.</li>
+  </ul>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 className="text-xl font-semibold mb-2">Results</h2>
+  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+    <li>Demonstrated precise pick-and-place operation using inverse kinematics.</li>
+    <li>Manual and automated modes with real-time GUI controls.</li>
+    <li>Sequence recording and replay functionality implemented.</li>
+    <li>Fully 3D printable modular design using parametric parts.</li>
+  </ul>
+</motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 className="text-xl font-semibold mb-2">Future Work</h2>
+  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+    <li>Integrate computer vision for autonomous object detection and tracking.</li>
+    <li>Experiment with 3D printing and laser engraving as end-effectors.</li>
+    <li>Improve structural rigidity and minimize mechanical backlash.</li>
+  </ul>
+</motion.div>
 
         <motion.ul
           initial={{ opacity: 0 }}
