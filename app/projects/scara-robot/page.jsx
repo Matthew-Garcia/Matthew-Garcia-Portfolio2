@@ -50,7 +50,7 @@ export default function ScaraRobotPage() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg text-gray-700 dark:text-gray-300 mb-6"
         >
-        This project features a custom-built SCARA (Selective Compliance Articulated Robot Arm) designed for precision pick-and-place tasks. The system combines mechanical engineering, embedded programming, and control theory into a single cohesive robotic platform.
+          This project features a custom-built SCARA (Selective Compliance Articulated Robot Arm) designed for precision pick-and-place tasks. The system combines mechanical engineering, embedded programming, and control theory into a single cohesive robotic platform.
 
 
         </motion.p>
@@ -69,25 +69,37 @@ export default function ScaraRobotPage() {
                 alt="SCARA Robot Render"
                 className="w-full rounded-lg shadow-md object-cover"
               />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md"
-            >
-              <h2 className="text-xl font-semibold mb-2">
-                Arduino-Controlled SCARA Robot in Action
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="flex flex-col md:flex-row gap-6 items-center"
+              >
+                <div className="w-full md:w-1/2">
+                  <img
+                    src="/SCARA-Robot-Arm.png"
+                    alt="Arduino-Controlled SCARA Robot Interface"
+                    className="w-full rounded-lg shadow-md object-cover"
+                  />
+                </div>
 
+                <div className="md:w-1/2 bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md">
+                  <h2 className="text-xl font-semibold mb-2">
+                    Arduino-Controlled SCARA Robot Interface
+                  </h2>
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    This section showcases the SCARA robotic arm operating in real time with a custom-built graphical user interface (GUI) developed in Processing. The GUI enables intuitive control of the robot using both forward and inverse kinematics.
+                  </p>
+                  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                    <li>Real-time joint angle and Cartesian coordinate control</li>
+                    <li>Visual feedback loop with user-defined positions</li>
+                    <li>Custom GUI built in Processing</li>
+                    <li>Arduino Mega and stepper driver control architecture</li>
+                    <li>PID tuning and motion profile adjustment</li>
+                  </ul>
+                </div>
+              </motion.div>
 
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                The completed SCARA robotic arm is shown interfaced with a custom-built control interface developed in Processing. 
-                The system leverages an Arduino microcontroller to execute precise movements using forward and inverse kinematics. 
-                Users can input joint parameters or Cartesian coordinates, with real-time feedback and control over gripper actuation. 
-                This configuration demonstrates a cohesive integration of embedded systems, mechanical design, and user-centered software engineering.
-              </p>
-            </motion.div>
           </div>
 
           {/* Animation */}
