@@ -169,10 +169,24 @@ export default function ScaraRobotPage() {
               <h2 className="text-xl font-semibold mb-2">
                 SolidWorks CAD View
               </h2>
-              <p className="text-gray-700 dark:text-gray-300">
-                A CAD model designed in SolidWorks showing internal components
-                and mechanical layout.
-              </p>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+  <li>
+    CAD model developed in SolidWorks to visualize mechanical structure and component layout.
+  </li>
+  <li>
+    Transparent view highlights internal components such as motors, pulleys, lead screws, and belt systems.
+  </li>
+  <li>
+    Designed for modularity, 3D printing, and ease of assembly.
+  </li>
+  <li>
+    Emphasizes mechanical design principles including kinematic constraints and actuator alignment.
+  </li>
+  <li>
+    Aids in verifying clearances, tolerances, and mechanical integrity prior to physical prototyping.
+  </li>
+</ul>
+
             </motion.div>
           </div>
         </div>
