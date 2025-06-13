@@ -80,7 +80,9 @@ export const workData = [
     {
         title: 'SCARA Robot Arm',
         description: 'Embedded Systems & Robotics',
-        bgImage: '/work-1.png',
+        bgImage: '/SCARA-Robot-Arm.gif',
+        link: '/projects/scara-robot'
+
     },
     {
         title: 'Smart IoT Pet Feeder',
