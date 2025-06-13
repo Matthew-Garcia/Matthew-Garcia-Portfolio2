@@ -244,13 +244,13 @@ export default function ScaraRobotPage() {
           </p>
         </motion.div>
 
-        <motion.div
+       <motion.div
   initial={{ opacity: 0, x: -50 }}
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.6 }}
   className="flex flex-col md:flex-row items-center bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md mt-12 gap-6"
 >
-  {/* Text Section */}
+  {/* Theory Text */}
   <div className="w-full md:w-1/2 space-y-4">
     <h2 className="text-xl font-semibold mb-2">Theory</h2>
     <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
@@ -273,7 +273,7 @@ export default function ScaraRobotPage() {
     </ul>
   </div>
 
-  {/* Image Section */}
+  {/* Theory Illustration */}
   <motion.div
     initial={{ opacity: 0, x: 50 }}
     whileInView={{ opacity: 1, x: 0 }}
@@ -282,7 +282,7 @@ export default function ScaraRobotPage() {
   >
     <img
       src="/Forward-and-Inverse-Kinematics-for-SCARA-Robot-Control.jpg"
-      alt="Kinematics Diagram"
+      alt="Forward and Inverse Kinematics Diagram"
       className="w-full rounded-lg shadow-md object-cover"
     />
   </motion.div>
