@@ -81,7 +81,7 @@ export const workData = [
         title: 'SCARA Robot Arm',
         description: 'Embedded Systems & Robotics',
         bgImage: '/SCARA-Robot-Arm.gif',
-        link: '/projects/scara-robot'
+        link: 'https://matthew-garcia-portfolio2.vercel.app/projects/scara-robot'
 
     },
     {
