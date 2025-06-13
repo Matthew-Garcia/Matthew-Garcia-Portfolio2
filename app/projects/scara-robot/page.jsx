@@ -199,42 +199,37 @@ export default function ScaraRobotPage() {
             </motion.div>
           </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>
-              <strong>Electronics:</strong> Arduino MEGA, CNC Shield, A4988
-              stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit
-              switches, DC power supply (12V/6A)
-            </li>
-            <li>
-              <strong>3D Design Software:</strong> 3DEXPERIENCE SOLIDWORKS,
-              xDesign, 3DMarkup
-            </li>
-            <li>
-              <strong>Programming:</strong> Arduino IDE (C++), Processing IDE
-              (Java-based), ControlP5 library
-            </li>
-            <li>
-              <strong>Hardware:</strong> Bambu Lab X1C 3D Printer,
-              PLA/PLA+ filament, linear rods, bearings, lead screws, GT2 pulleys
-            </li>
-            <li>
-              <strong>Libraries:</strong> AccelStepper, ControlP5
-            </li>
-          </ul>
-        </motion.div>
+       <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+>
+  <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
+  <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+    <li>
+      <strong>Electronics:</strong> Arduino Mega, CNC Shield, A4988 stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit switches, DC power supply (12V/6A)
+    </li>
+    <li>
+      <strong>3D Design Software:</strong> 3DEXPERIENCE SOLIDWORKS, xDesign, 3DMarkup
+    </li>
+    <li>
+      <strong>Programming:</strong> Arduino IDE (C++), Processing IDE (Java-based), ControlP5 library
+    </li>
+    <li>
+      <strong>Hardware:</strong> Bambu Lab X1 Carbon 3D Printer, PLA/PLA+ filament, linear rods, bearings, lead screws, GT2 pulleys
+    </li>
+    <li>
+      <strong>Libraries:</strong> AccelStepper, ControlP5
+    </li>
+  </ul>
+</motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Purpose</h2>
           <p className="text-gray-700 dark:text-gray-300">
@@ -251,7 +246,7 @@ export default function ScaraRobotPage() {
           className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Theory</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>
               <strong>Forward Kinematics:</strong> Calculates end-effector
               position from joint angles.
@@ -275,10 +270,10 @@ export default function ScaraRobotPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Results</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>
               Demonstrated precise pick-and-place operation using inverse
               kinematics.
@@ -290,13 +285,26 @@ export default function ScaraRobotPage() {
         </motion.div>
 
         <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
+>
+  <h2 className="text-xl font-semibold mb-2">Conclusion</h2>
+  <p className="text-gray-700 dark:text-gray-300">
+    This SCARA robotic arm project served as a comprehensive demonstration of robotics engineering principles—bringing together CAD modeling, embedded systems, and control algorithms into a functional prototype. Through hands-on integration of hardware and software, the project strengthened practical skills in mechanical design, kinematic theory, and automation. Future improvements, such as integrating computer vision, will further enhance the robot’s autonomy and expand its application potential in industrial and academic settings.
+  </p>
+</motion.div>
+
+
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Future Work</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>
               Integrate computer vision for autonomous object detection and
               tracking.
