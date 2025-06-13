@@ -203,10 +203,10 @@ export default function ScaraRobotPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li>
               <strong>Electronics:</strong> Arduino MEGA, CNC Shield, A4988
               stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit
