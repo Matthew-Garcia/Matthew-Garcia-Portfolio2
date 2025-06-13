@@ -245,31 +245,49 @@ export default function ScaraRobotPage() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
-        >
-          <h2 className="text-xl font-semibold mb-2">Theory</h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li>
-              <strong>Forward Kinematics:</strong> Calculates end-effector
-              position from joint angles.
-            </li>
-            <li>
-              <strong>Inverse Kinematics:</strong> Computes joint angles for a
-              specified position.
-            </li>
-            <li>
-              <strong>Motion Control:</strong> Smooth trajectory execution via
-              AccelStepper.
-            </li>
-            <li>
-              <strong>GUI Integration:</strong> Live joint and Cartesian input
-              with visual feedback.
-            </li>
-          </ul>
-        </motion.div>
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  className="flex flex-col md:flex-row items-center bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md mt-12 gap-6"
+>
+  {/* Text Section */}
+  <div className="w-full md:w-1/2 space-y-4">
+    <h2 className="text-xl font-semibold mb-2">Theory</h2>
+    <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+      <li>
+        <strong>Forward Kinematics:</strong> Calculates end-effector position
+        from joint angles.
+      </li>
+      <li>
+        <strong>Inverse Kinematics:</strong> Computes joint angles for a
+        specified position.
+      </li>
+      <li>
+        <strong>Motion Control:</strong> Smooth trajectory execution via
+        AccelStepper.
+      </li>
+      <li>
+        <strong>GUI Integration:</strong> Live joint and Cartesian input with
+        visual feedback.
+      </li>
+    </ul>
+  </div>
+
+  {/* Image Section */}
+  <motion.div
+    initial={{ opacity: 0, x: 50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.6 }}
+    className="w-full md:w-1/2"
+  >
+    <img
+      src="/Forward-and-Inverse-Kinematics-for-SCARA-Robot-Control.jpg"
+      alt="Kinematics Diagram"
+      className="w-full rounded-lg shadow-md object-cover"
+    />
+  </motion.div>
+</motion.div>
+
 
         <motion.div
           initial={{ opacity: 0 }}
