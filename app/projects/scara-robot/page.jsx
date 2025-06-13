@@ -208,7 +208,7 @@ export default function ScaraRobotPage() {
           <h2 className="text-xl font-semibold mb-2">Tools Used</h2>
           <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
             <li>
-              <strong>Electronics:</strong> Arduino UNO, CNC Shield, A4988
+              <strong>Electronics:</strong> Arduino MEGA, CNC Shield, A4988
               stepper drivers, MG996R servo motor, NEMA 17 stepper motors, limit
               switches, DC power supply (12V/6A)
             </li>
@@ -221,7 +221,7 @@ export default function ScaraRobotPage() {
               (Java-based), ControlP5 library
             </li>
             <li>
-              <strong>Hardware:</strong> Creality CR-10 / Ender3 3D Printer,
+              <strong>Hardware:</strong> Bambu Lab X1C 3D Printer,
               PLA/PLA+ filament, linear rods, bearings, lead screws, GT2 pulleys
             </li>
             <li>
