@@ -248,7 +248,7 @@ export default function ScaraRobotPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Theory</h2>
           <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
@@ -293,7 +293,7 @@ export default function ScaraRobotPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4"
+          className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md space-y-4 mt-12"
         >
           <h2 className="text-xl font-semibold mb-2">Future Work</h2>
           <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
