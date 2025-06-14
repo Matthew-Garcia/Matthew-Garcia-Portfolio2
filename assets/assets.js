@@ -82,7 +82,6 @@ export const workData = [
         description: 'Embedded Systems & Robotics',
         bgImage: '/SCARA-Robot-Arm.gif',
         link: 'https://matthew-garcia-portfolio2.vercel.app/projects/scara-robot'
-
     },
     {
         title: 'Smart IoT Pet Feeder',
