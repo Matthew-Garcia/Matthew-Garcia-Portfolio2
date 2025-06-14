@@ -101,10 +101,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Automated pick-and-place system with ROS2 and PID control....', link: 'https://github.com/Matthew-Garcia/SCARA-Robot' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Embedded Systems Development', description: 'Designing real-time embedded applications using C/C++, microcontrollers (e.g., Arduino, STM32), and RTOS...', link: 'https://github.com/Matthew-Garcia/SCARA-Robot' },
+    { icon: assets.mobile_icon, title: 'Robotics & Automation', description: 'Building autonomous robotic systems with ROS2, motion planning, PID control, and sensor fusion...', link: '' },
+    { icon: assets.ui_icon, title: 'FPGA & Digital Logic Design', description: 'Developing hardware logic (VHDL/Verilog) for ALUs, controllers, and signal processing systems...', link: '' },
+    { icon: assets.graphics_icon, title: 'IoT & Edge Computing', description: 'Connecting devices using Wi-Fi/Bluetooth and processing data locally on microcontrollers or SBCs....', link: '' },
 ]
 
 export const infoList = [
